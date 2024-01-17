@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelMundo</title>
+  </head>
+  <body>
+    <h1>Reserva de viagens</h1>
+    <form method="get">
+      <label for="name">Nome Completo:</label>
+      <br />
+      <input type="text" name="name" id="text-name" required />
+      <br />
+      <br />
+
+      <label for="travelDate">Data da Viagem:</label>
+      <br />
+      <input type="date" name="travelDate" id="date-travel" required />
+      <br />
+      <br />
+
+      <label for="passengers">Número de Passageiros:</label>
+      <br />
+      <input type="number" name="passengers" id="number-passengers" required />
+      <br />
+      <br />
+
+      <label for="countryOrigin">País de Origem:</label>
+      <br />
+      <select name="countryOrigin" id="select-originCountry">
+        <option value="BR" selected>Brasil</option>
+        <option value="USA">Estados Unidos</option>
+        <option value="CH">Chile</option>
+      </select>
+      <br />
+      <br />
+
+      <label for="email">Email:</label>
+      <br />
+      <input type="email" name="email" id="text-email" />
+      <br />
+      <br />
+
+      <label for="mealType">Tipo de Refeição no Vôo:</label>
+      <br />
+      <select name="mealType" id="select-mealType">
+        <option value="STANDARD" selected>Padrão</option>
+        <option value="VEGAN">Vegetariana</option>
+        <option value="GLUTENFREE">Sem Glúten</option>
+      </select>
+      <br />
+      <br />
+
+      <label for="phone">Numero para Contato:</label>
+      <br />
+      <input type="tel" name="phone" id="tel-phone" />
+      <br />
+      <br />
+
+      <label for="destinationCountry">País de Destino:</label>
+      <br />
+      <select name="destinationCountry" id="select-destinationCountry">
+        <option value="ENG">Inglaterra</option>
+        <option value="FR">França</option>
+        <option value="USA">Estados Unidos</option>
+        <option value="JPN">Japão</option>
+      </select>
+      <br />
+      <br />
+
+      <label>Preferencia de assento:</label>
+      <input type="radio" name="" />
+      <br />
+      <br />
+
+      <label for="cardNumber">Numero do cartão:</label>
+      <input type="text" name="cardNumber" id="number-cardNumber" />
+      <br />
+      <br />
+
+      <label for="passport">Envie uma foto do seu Passaport:</label>
+      <br />
+      <input type="file" name="passport" id="file-passport" />
+      <br />
+      <br />
+
+      <label for="roomService">Serviço de quarto:</label>
+      <input type="checkbox" name="roomService" id="cbx-roomService" />
+      <br />
+
+      <label for="airportTransfer">Traslado do Aeroporto:</label>
+      <input type="checkbox" name="airportTransfer" id="cbx-airportTransfer" />
+      <br />
+      <label for="additionalTouristTour">Passeios Turisticos Adicionais.</label>
+      <input
+        type="checkbox"
+        name="additionalTouristTour"
+        id="cbx-additionalTouristTour"
+      />
+      <br />
+      <br />
+
+      <button type="submit" onclick="cliquei()">Enviar</button>
+    </form>
+
+    <script>
+      function cliquei() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const entries = urlParams.entries();
+
+        for (const entry of entries) {
+          console.log(entry);
+        }
+      }
+    </script>
+  </body>
+</html>
