@@ -1,0 +1,20 @@
+p {
+    color: blue;
+}
+
+.destacado{
+    color: red;
+    text-align: center;
+}
+
+#titulo{
+    color: yellow;
+    text-align: center;
+}
+
+a[target][target]{
+    text-decoration: none;
+    text-align: left;
+    font-size: smaller;
+    font-weight: bold;
+}
