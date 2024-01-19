@@ -1,0 +1,40 @@
+/* dependentes */
+.dependente .destacado span {
+  background-color: blue;
+  font-weight: bold;
+  color: white;
+}
+
+.dependente ul li {
+  background-color: red;
+  color: yellow;
+}
+
+/* filhos */
+.filho ul > li {
+  text-align: center;
+  background-color: green;
+}
+
+.filho div > h2 {
+  color: blue;
+}
+
+/* Irmãos gerais */
+.irmao-geral p ~ p {
+  background-color: black;
+  color: white;
+}
+
+.irmao-geral table ~ table {
+  border: 1px solid black;
+}
+
+.irmao-adjacente p + p {
+  background-color: yellow;
+  color: red;
+}
+
+.irmao-adjacente ul + ul {
+  list-style: circle;
+}
