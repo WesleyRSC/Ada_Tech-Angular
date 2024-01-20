@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combiners</title>
+  </head>
+  <body>
+    <h2>nth-child</h2>
+    <div class="nth-child">
+      <!-- Exercício 1: Selecione e estilize o terceiro elemento de uma lista não ordenada. -->
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+      </ul>
+
+      <!-- Exercício 2: Selecione e estilize todos os elementos pares de uma lista ordenada. -->
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+      </ol>
+    </div>
+
+    <h2>nth-of-type</h2>
+    <div class="nth-of-type">
+      <!-- Exercício 3: Selecione e estilize o quarto elemento <p> de uma página. -->
+      <p>Primeiro parágrafo</p>
+      <p>Segundo parágrafo</p>
+      <p>Terceiro parágrafo</p>
+      <p>Quarto parágrafo</p>
+      <p>Quinto parágrafo</p>
+
+      <!-- Exercício 4: Selecione e estilize todos os terceiros elementos <div> dentro de uma <section>. -->
+      <section>
+        <div>Primeiro elemento div</div>
+        <div>Segundo elemento div</div>
+        <div>Terceiro elemento div</div>
+        <div>Quarto elemento div</div>
+        <div>Quinto elemento div</div>
+      </section>
+    </div>
+
+    <h2>not</h2>
+    <div class="not">
+      <!-- Exercício 5: Selecione e estilize todos os parágrafos que não têm a classe "destacado". -->
+      <p class="destacado">Parágrafo destacado</p>
+      <p>Parágrafo normal</p>
+      <p>Outro parágrafo normal</p>
+      <p class="destacado">Outro parágrafo destacado</p>
+
+      <!-- Exercício 6: Selecione e estilize todos os links <a> que não possuem uma classe específica. -->
+      <a href="#" class="link-especial">Link especial</a>
+      <a href="#">Link normal</a>
+      <a href="#">Outro link normal</a>
+      <a href="#" class="link-especial">Outro link especial</a>
+    </div>
+
+    <h2>has</h2>
+    <div class="has">
+      <!-- Exercício 7: Selecione e estilize uma tabela <table> que possui pelo menos uma célula de cabeçalho <th>. -->
+      <table border="1">
+        <tr>
+          <th>Cabeçalho 1</th>
+          <th>Cabeçalho 2</th>
+        </tr>
+        <tr>
+          <td>Dado 1</td>
+          <td>Dado 2</td>
+        </tr>
+      </table>
+
+      <br />
+
+      <table border="1">
+        <tr>
+          <td>Dado 3</td>
+          <td>Dado 4</td>
+        </tr>
+      </table>
+    </div>
+
+    <h2>empty</h2>
+    <div class="empty">
+      <!-- Exercício 8: Selecione e estilize todos os elementos <div> que estão vazios. -->
+      <div></div>
+      <div>Uma div que será que está vazia?</div>
+      <div></div>
+
+      <!-- Exercício 9: Selecione e estilize todos os elementos <span> que não possuem texto dentro deles. -->
+      <span></span>
+      <span>Este elemento está vazio?</span>
+      <span></span>
+    </div>
+
+    <h2>last-child</h2>
+    <div class="last-child">
+      <!-- Exercício 10: Selecione e estilize o último elemento de uma lista não ordenada. -->
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+      </ul>
+
+    <!-- Exercício 11: Selecione e estilize o último parágrafo em um bloco de texto. -->
+    <p>Primeiro parágrafo</p>
+    <p>Segundo parágrafo</p>
+    <p>Terceiro parágrafo</p>
+    <p>Último parágrafo</p>
+</div>
+
+    <h2>first-child</h2>
+    <div class="first-child">
+      <!-- Exercício 12: Selecione e estilize o primeiro elemento de uma lista ordenada. -->
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+      </ol>
+
+      <!-- Exercício 13: Selecione e estilize o primeiro cabeçalho de nível 3 (<h3>) em uma página. -->
+      <h3>Primeiro cabeçalho h3</h3>
+      <h3>Segundo cabeçalho h3</h3>
+      <h3>Terceiro cabeçalho h3</h3>
+    </div>
+
+    <h2>is/where</h2>
+    <div class="is-where">
+      <!-- Exercício 14: Use :is para selecionar e estilizar todos os elementos de lista (<ul> ou <ol>) em uma página. -->
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ul>
+      <ol>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ol>
+
+      <!-- Exercício 15: Use :where para selecionar e estilizar todos os links (<a>) que estão dentro de uma div com a classe "conteúdo". -->
+      <div class="conteúdo">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+      </div>
+      <a href="#">Link 3</a>
+      <a href="#">Link 4</a>
+    </div>
+  </body>
+</html>

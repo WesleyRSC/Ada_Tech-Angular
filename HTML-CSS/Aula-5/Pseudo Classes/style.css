@@ -1,0 +1,84 @@
+.nth-child ul li:nth-child(3) {
+  background-color: yellow;
+}
+
+.nth-child ol li:nth-child(even) {
+  background-color: blue;
+}
+
+.nth-of-type p:nth-of-type(4) {
+  background-color: black;
+  color: white;
+}
+
+.nth-of-type section div:nth-of-type(3) {
+  height: 20px;
+  color: brown;
+  background-color: lightblue;
+}
+
+.not p:not(.destacado) {
+  color: yellow;
+  background-color: brown;
+}
+
+.not a:not(.link-especial) {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-color: black;
+  border-radius: 5px;
+}
+
+.has table:has(th) {
+  color: blue;
+  background-color: lightblue;
+  border-color: red;
+  border-style: dashed;
+}
+
+.empty div:empty {
+  height: 20px;
+  width: 20px;
+  background-color: violet;
+  border-radius: 10px;
+}
+
+.empty span:empty {
+  min-height: 20px;
+  min-width: 20px;
+  background-color: red;
+  display: inline-block;
+}
+
+.last-child ul :last-child {
+  background-color: darkblue;
+  color: aliceblue;
+}
+
+.last-child p:last-child {
+  background-color: darkblue;
+  color: aliceblue;
+}
+
+.first-child ol :first-child {
+  background-color: gold;
+  text-align: center;
+}
+
+.first-child h3 :first-child {
+  text-align: center;
+  background-color: black;
+  color: gold;
+}
+
+.is-where :is(ul, ol) {
+  color: blue;
+  background-color: pink;
+}
+
+.is-where :where(.conteúdo > a) {
+  color: pink;
+  text-decoration: none;
+}
